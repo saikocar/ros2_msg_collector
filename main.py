@@ -5,7 +5,7 @@ import time
 def find_msg_package_directories(root_dir: Path) -> list[Path]:
     result_dirs = []
     for xmlpath in root_dir.rglob('package.xml'):
-        if xmlpath.is_file() and any(xmlpath.parent.rglob('*.msg')):
+        if xmlpath.is_file() and (any(xmlpath.parent.rglob('*.msg')) or any(xmlpath.parent.rglob('*.idl'))):
             result_dirs.append(xmlpath.parent)
     return result_dirs
 
