@@ -12,7 +12,7 @@ python3 main.py <path/to/workspace/src>
 
 `sftp://192.168.1.21` をマウントしてから下記を実行
 ```bash
-python3 main.py '/run/user/1000/gvfs/sftp:host=192.168.1.21/home/sit/autoware_erga_humble2/src'
+python3 main.py '/run/user/1000/gvfs/sftp:host=192.168.1.21/home/sit/ros2_rainbow/src'
 ```
 
 メッセージをビルドする
